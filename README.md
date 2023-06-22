@@ -17,3 +17,8 @@ The only necessary values is at least one source directory and ONLY one destinat
 if the user wants the files suppressed. 
 
 ## Notes
+<pre>
+  1. Add level of compression desired
+  2. Add multiple destination directories
+  3. Add zip only (no compression)
+</pre>
