@@ -7,7 +7,6 @@ namespace File_Transfer
 {
     internal class Program
     {
-        private readonly ILogger _logger;
         /*
          * A simple program to copy over files from multiple sources into a single destination. 
          * This was made to make life easier when backing up my files over to my back-up drive.
@@ -56,8 +55,6 @@ namespace File_Transfer
             rootCommand.SetHandler(
                 (bool stats, bool compress, List<string> sourceDirectories, string destination, int compressLevel) =>
                 {
-                    _logger.LogInformation("transfer starting");
-
                     Stats? s = null;
                     if (stats)
                     {
