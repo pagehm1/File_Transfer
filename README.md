@@ -6,8 +6,9 @@ Allows the user to back up multiple directories to a single destination. Also pr
 <pre>
 Options: <br />
   -c, --compress                              decrease destination directory size [default: False] <br />
-  -f, --files <files> (REQUIRED)              directories that are being transferred <br />
   -d, --destination <destination> (REQUIRED)  directory that files are being transferred to <br />
+  -f, --files <files> (REQUIRED)              directories that are being transferred <br />
+  -l, --compress-level                        provides the level of compression. Link: https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.compressionlevel?view=net-6.0 <br />
   -s, --stats                                 provides statistics on the files being transferred [default: False] <br />
   --version                                   Show version information <br />
   -?, -h, --help                              Show help and usage information <br />
@@ -18,7 +19,6 @@ if the user wants the files suppressed.
 
 ## Notes
 <pre>
-  1. Add level of compression desired
-  2. Add multiple destination directories
-  3. Add zip only (no compression)
+  1. Add multiple destination directories
+  2. Add zip only (no compression)
 </pre>
